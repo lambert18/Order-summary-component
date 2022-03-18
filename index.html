@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Red+Hat+Display">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+      --pale_blue: hsl(225, 100%, 94%);
+      --very_pale_blue: hsl(225, 100%, 98%);
+      --bright_blue: hsl(245, 75%, 52%);
+      --dark_blue: hsl(223, 47%, 23%);
+      --desaturated_blue: hsl(224, 23%, 55%);
+    }
+
+    * {
+      font-family: 'Red Hat Display', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      position: relative;
+      background-color: var(--pale_blue);
+      background-image: url('./images/pattern-background-desktop.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    h2 {
+      font-weight: 900;
+      margin: 25px 0 15px 0;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      width: 16vw;
+      margin: 0 auto;
+      color: var(--desaturated_blue);
+    }
+
+    .template_music {
+      position: relative;
+      width: 450px;
+      height: 650px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 20%);
+      text-align: center;
+      background-color: white;
+      border-radius: 15px;
+    }
+
+    .template_music img {
+      border-radius: 15px 10px 0 0;
+    }
+
+    li {
+      position: relative;
+      display: inline-block;
+      list-style-type: none;
+    }
+    
+    .subscription {
+      background-color: var(--very_pale_blue);
+      border-radius: 15px;
+      height: 50px;
+      margin: 15px 60px 30px 60px;
+      padding: 20px;
+    }
+
+    .subscription img {
+      display: inline;
+      width: 50px;
+      float: left;
+    }
+
+    .text {
+      float: left;
+      margin: 0 30px;
+      line-height: 25px;
+    }
+
+    .text_A {
+      font-weight: 700;
+    }
+
+    .text_B {
+      color: var(--desaturated_blue);
+    }
+
+    .btn_change {
+      float: right;
+      position: relative;
+      transform: translateY(-50%);
+      font-weight: 700;
+      cursor: pointer;
+      color: var(--bright_blue);
+    }
+
+    .btn_change:hover {
+      color: hsla(245, 75%, 52%, 0.6);
+    }
+
+    .btn {
+      font-weight: 700;
+      position: relative;
+      width: 300px;
+      height: auto;
+      padding: 15px;
+      margin: 0 auto;
+      background-color: var(--bright_blue);
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 12px 40px hsla(245, 75%, 52%, 0.4);
+    }
+
+    .btn:hover {
+      background-color: hsla(245, 75%, 52%, 0.6);
+    }
+
+    .btn_cancel {
+      font-weight: 700;
+      color: var(--desaturated_blue);
+      margin-top: 30px;
+      margin-bottom: 50px;
+      cursor: pointer;
+    }
+
+    .btn_cancel:hover {
+      color: var(--dark_blue)
+    }
+
+    .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+      transform: translateY(25vh);
+    }
+
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
+
+    @media screen and (max-width: 470px) {
+      body {
+        background-image: url('./images/pattern-background-mobile.svg');
+      }
+
+      p {
+      font-size: 16px;
+      font-weight: 500;
+      width: 80vw;
+      line-height: 25px;
+      color: var(--desaturated_blue);
+      }
+
+      .template_music {
+      width: 90vw;
+      height: 67vh;
+    }
+
+    .template_music img {
+      width: 90vw;
+    }
+    
+    .subscription img {
+      width: 13vw;
+    }
+
+    .subscription {
+      background-color: var(--very_pale_blue);
+      border-radius: 15px;
+      margin: 15px 25px 30px 25px;
+    }
+
+    .text {
+      margin: 0 20px;
+    }
+
+    .btn {
+      width: 68vw;
+    }
+
+    li {
+      font-size: 4vw;
+    }
+    }
+
+ 
+
+    @media screen and (max-width: 375px) {
+      body {
+        background-image: url('./images/pattern-background-mobile.svg');
+      }
+
+      p {
+      font-size: 16px;
+      font-weight: 500;
+      width: 80vw;
+      line-height: 25px;
+      color: var(--desaturated_blue);
+      }
+
+      .template_music {
+      width: 90vw;
+      height: 88vh;
+    }
+
+    .template_music img {
+      width: 90vw;
+    }
+    
+    .subscription img {
+      width: 13vw;
+    }
+
+    .subscription {
+      background-color: var(--very_pale_blue);
+      border-radius: 15px;
+      margin: 15px 25px 30px 25px;
+    }
+
+    .text {
+      margin: 0 20px;
+    }
+
+    .btn {
+      width: 68vw;
+    }
+
+    li {
+      font-size: 4vw;
+    }
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="template_music">
+
+    <img src="./images/illustration-hero.svg" alt="Icon Music">
+    <h2>Order Summary</h2>
+ 
+    <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+    device anywhere you like!</p>
+    
+    <div class="subscription">
+      <img src="./images/icon-music.svg" alt="Icon Music">
+      <ul>
+        <li class="text text_A">Annual Plan</li>
+        <li class="text text_B">$59.99/year</li>
+        <li class="btn_change"><u>Change</u></li>
+      </ul>
+  
+    </div>
+
+    <div class="btn">Proceed to Payment</div>
+    <div class="btn_cancel">Cancel Order</div>
+  </div>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://twitter.com/park__ul" target="_blank">Paulinus Lambert Subiantoro</a>.
+  </div>
+</body>
+</html>
