@@ -24,12 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
-![./screenshot.png]
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [https://lambert18.github.io/Order-summary-component/]
-- Live Site URL: [https://lambert18.github.io/Order-summary-component/]
+- Solution URL: [Add solution URL here](https://lambert18.github.io/Order-summary-component/)
+- Live Site URL: [Order Summary Component](https://lambert18.github.io/Order-summary-component/)
 
 ## My process
 
@@ -40,29 +40,23 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+My first time using border to make a button without tag button.
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.btn {
+  font-weight: 700;
+  position: relative;
+  width: 300px;
+  height: auto;
+  padding: 15px;
+  margin: 0 auto;
+  background-color: var(--bright_blue);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 12px 40px hsla(245, 75%, 52%, 0.4);
 }
 ```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
@@ -72,6 +66,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [https://paulinuslambert.com/]
-- Frontend Mentor - [https://www.frontendmentor.io/profile/lambert18]
-- Twitter - [https://twitter.com/park__ul]
+- Website - [www.paulinuslambert.com](https://paulinuslambert.com/)
+- Frontend Mentor - [@lambert18](https://www.frontendmentor.io/profile/lambert18)
+- Twitter - [@park\_\_ul](https://twitter.com/park__ul)
