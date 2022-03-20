@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://lambert18.github.io/Order-summary-component/)
+- Solution URL: [Responsive Order Summary Card using CSS only](https://www.frontendmentor.io/solutions/responsive-order-summary-card-using-css-only-H8y7yoB6c)
 - Live Site URL: [Order Summary Component](https://lambert18.github.io/Order-summary-component/)
 
 ## My process
@@ -60,9 +60,7 @@ My first time using border to make a button without tag button.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+In the future I will make improvements to the CSS part, because I only use the simplest Properties and it's still very messy, so I need to learn more and continue this development again.
 
 ## Author
 
